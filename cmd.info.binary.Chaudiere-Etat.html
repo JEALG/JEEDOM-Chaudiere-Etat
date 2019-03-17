@@ -2,12 +2,14 @@
 	<!-- Info Widget					 class="cmd #history# tooltips cmd-widget cursor"
 		Basé sur les widget de 	:
 		Mise à jour 			: JAG 20190128 : Correction variable hauteur/largeur
-		Mise à jour 			: JAG 20190202 : Correction problème marge
+		Mise à jour 			: JAG 20190317 : ajout centrer widget (merci à Antoinekl1)
 	-->
+	<center>
 	<div class="row">
 		<div class="cmdName" id="cmdName#id#" style="font-weight: bold;font-size : 10px; #hideCmdName#">#name_display#</div>
 		<div class="iconCmd#uid#"></div>
 	</div>
+	</center>
 	<script>
 		jeedom.cmd.update['#id#'] = function(_options){
 			// Options de personnalisation avec valeur par defaut 
