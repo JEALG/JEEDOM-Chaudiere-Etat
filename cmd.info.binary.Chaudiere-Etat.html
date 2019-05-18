@@ -1,7 +1,6 @@
 <div style="width:90px;min-height:62px;" class="cmd #history# tooltips cmd-widget cursor" data-type="info" data-subtype="binary" data-cmd_id="#id#" data-cmd_uid="#uid#" data-eqLogic_id="#eqLogic_id#" data-eqLogic_id="#eqLogic_id#" title="#collectDate#">
 	<!-- Info Widget					
         Basé sur les widget de 	:
-        Mise à jour 			: JAG 20190128 : Correction variable hauteur/largeur
         Mise à jour 			: JAG 20190327 : Amélioration code Ajout variable pour définir l'extension du fichier (merci à fishes)
         Mise à jour				: JAG 20190518 : Nettoyage code
 	-->
@@ -21,7 +20,7 @@
                 var srcImglogoON	= ('#logoClose#'!='#'+'logoClose#') ? "#logoClose#" : "chaudiere_on;
                 var srcImglogoON_T 	= ('#logoON_type#'!='#'+'logoON_type#') ? "#logoON_type#" : "png";
             // Valeur pour OFF ou 0
-                var srcImglogoOFF	= ('#logoOpen#'!='#'+'logoOpen#') ? "#logoOpen#" 	: "chaudiere_off";
+                var srcImglogoOFF	= ('#logoOpen#'!='#'+'logoOpen#') ? "#logoOpen#" : "chaudiere_off";
                 var srcImglogoOFF_T = ('#logoOFF_type#'!='#'+'logoOFF_type#') ? "#logoOFF_type#" : "png";
 		// Paramètrage du logo pour Erreur	
                 var srcImglogoER	= ('#logoER#'!='#'+'logoER#') ? "#logoER#": "oups";
@@ -32,11 +31,11 @@
                 var srcImgSize 		= 'height='+srcImgHeight+'px width='+srcImgWidth+'px';
 		// Paramétrage des images
                 var srcImgURL 		= 'plugins/widget/core/template/dashboard/cmd.info.binary.Chaudiere-Etat/';
-                var srcImgOn 		= srcImgURL +srcImglogoON+"."+srcImglogoON_T;          // Pour Valeur = 1
-                var srcImgOff 		= srcImgURL +srcImglogoOFF+"."+srcImglogoOFF_T;      //  Pour valeur = 0
-                var srcImgError 	= srcImgURL +srcImglogoER+"."+srcImglogoER_T;              //  Pour valeur = Erreur
+                var srcImgOn 		= srcImgURL +srcImglogoON+"."+srcImglogoON_T;    // Pour Valeur = 1
+                var srcImgOff 		= srcImgURL +srcImglogoOFF+"."+srcImglogoOFF_T; //  Pour valeur = 0
+                var srcImgError 	= srcImgURL +srcImglogoER+"."+srcImglogoER_T;  //  Pour valeur = Erreur
 		// Affichage durée changement dernier etat
-                var srcImglogoTime = '#logoTime#';
+                var srcImglogoTime  = '#logoTime#';
                 var srcImgPath;
         
         if (_options.display_value == '1') {
